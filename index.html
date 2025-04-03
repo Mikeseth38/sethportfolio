@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <Link rel ="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>SM PORTFOLIO</title>
+</head>
+<body>
+    <header>
+        <h1>SM </h1>
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <nav class="navbar"> 
+                <a href="#Home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="contact">Contact</a>
+    
+        </nav>
+    </header>
+    <section class="Home" id="Home">
+        <div class="home-content">
+            <h3>Hello ,its me</h3>
+            <h1>Seth Mike</h1>
+            <h3>And I am a <span>Software Developer </span></h3><br>
+            <p> I am a Software Developer with a passion for creating innovative solutions. I specialize in web development, mobile app development, and database management.</p>
+            <p> Build. Solve. Innovate. Repeat</p>
+         <div class="social-media">
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.github.com/"><i class="fa-brands fa-github"></i></a>
+         </div>
+        </div>
+        <div class="home-img">
+            <img src="px.jpg" alt="">
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="about.jpg" alt="">
+
+        </div>
+        <div class="about-content">
+            <h2>About Me</h2>
+            <h3>I'm a Software Developer</h3>
+            <p>professioner who designs, builds, tests, and maintains software applications, systems, and platforms. I use programming languages, frameworks, and tools to create solutions that meet user needs or solve specific problems.</p>
+           
+            <div class="about-timeline">
+                <h3>Experience</h3>
+                <div class="timeline-item">
+                    <h4>Software Developer</h4>
+                    <p>Tyson Company (2022 - Present)</p>
+                    <p>Developed and maintained web applications using React.js and Node.js.</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>Intern</h4>
+                    <p>ETHSMI Company (2021 - 2022)</p>
+                    <p>Assisted in building responsive websites and debugging code.</p>
+                </div>
+            </div>
+            <a href="#" class="btn">Download CV</a>
+        </div>
+    </section>
+    <section class="Services" id="services">
+        <h2 class="Heading">My<span> Services</span></h2>
+        <div class="services-container">
+            <div class="service-box">
+                <i class="fa-solid fa-code"></i>
+                <h3>Web Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <div class="service-box">
+                <i class="fa-solid fa-mobile-alt"></i>
+                <h3>Mobile App Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <div class="service-box">
+                <i class="fa-solid fa-database"></i>
+                <h3>Database Management</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <div class="service-box">
+                <i class="fa-solid fa-cloud"></i>
+                <h3>Cloud Computing</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+           </div>  
+
+    <section class="portfolio" id="portfolio">
+    <h2 class="Heading">Latest <span>Projects</span></h2>
+
+    <div class="portfolio-container">
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="p1.jpg" alt="Project 1">
+                    <h3>Web Development</h3>
+                </div>
+                <div class="card-back">
+                    <h3>Details</h3>
+                    <p>This project involves creating a responsive website using HTML, CSS, and JavaScript.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="p6.png" alt="Project 2">
+                    <h3>Mobile App Development</h3>
+                </div>
+                <div class="card-back">
+                    <h3>Details</h3>
+                    <p>This project involves building a mobile app using React Native.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="p4.jpg" alt="Project 3">
+                    <h3>Database</h3>
+                </div>
+                <div class="card-back">
+                    <h3>Details</h3>
+                    <p>This project involves designing and managing a database using MySQL.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="contact" id="contact">
+        <h2 class="Heading">Contact <span>Me</span></h2>
+        <form action="#">
+            <div class="input-box"></div>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+            
+         </div>
+         <div class="input-box">
+            <input type="number" placeholder="Phone Number" required>
+            <input type="text" placeholder="Email Subject" required>
+         </div>
+                <textarea name="id" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <input type="submit" value="Send Message" class="btn">
+        </div>
+        </form>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <!-- About Section -->
+            <div class="footer-about">
+                <h3>About Me</h3>
+                <p>I am Seth Mike, a passionate Software Developer dedicated to creating innovative and user-friendly solutions. I specialize in web development, mobile app development, and database management.</p>
+            </div>
+    
+            <!-- Quick Links Section -->
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#services">Services</a></li>
+                </ul>
+            </div>
+    
+            <!-- Services Section -->
+            <div class="footer-services">
+                <h3>Services I Offer</h3>
+                <ul>
+                    <li>Web Development</li>
+                    <li>Mobile App Development</li>
+                    <li>Database Management</li>
+                    <li>Cloud Computing</li>
+                    <li>DevOps</li>
+                    <li>Custom Software Development</li>
+                </ul>
+            </div>
+    
+            <!-- Social Media Section -->
+            <div class="footer-social">
+                <h3>Follow Me</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.github.com/" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Bottom Section -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 Seth Mike. All rights reserved.</p>
+            <div class="footer-policies">
+                <a href="#privacy-policy">Privacy Policy</a> |
+                <a href="#terms-conditions">Terms and Conditions</a> |
+                <a href="#cookies-policy">Cookies Policy</a>
+            </div>
+        </div>
+        
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+
+    
+</body>
+</html>
