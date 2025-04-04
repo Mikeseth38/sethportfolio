@@ -1,4 +1,24 @@
+
 @import url('https://fonts.googleapis.com/css2?family=FAMILY_NAME:wght@WEIGHT_OR_RANGE&display=swap');
+
+.navbar {
+    min-width: auto;
+    display: all; /* Hide by default */
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        display: flex; /* Show on smaller screens */
+    }
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -21,13 +41,101 @@ body{
     color: white;
     overflow-x: hidden;
 }
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 768px) {
+    html {
+        font-size: 50%; /* Reduce font size for smaller screens */
+    }
+header {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.navbar {
+
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+}
+
+.navbar a {
+    font-size: 1.4rem;
+}
+.footer-container div {
+    margin-bottom: 2rem;
+}
+
+.social-icons {
+    justify-content: center;
+}
+}   #menu-icon {
+    display: block;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.home-img img {
+    width: 100%; /* Full width for smaller screens */
+    height: auto;
+    margin: 2rem 0;
+}
+
+.about {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+}
+.about-img img {
+    width: 80%; /* Adjust image size */
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+.services-container,
+.portfolio-container {
+    grid-template-columns: 1fr; /* Single column layout */
+    gap: 2rem;
+}
+
+.footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+/* Header */
+header {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+color: white;
+font-size: 2rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 2rem 4rem;
+z-index: 99;
+background-color: #24374a;
+}
+
+.navbar .nav-link {
+    color: white;
+    font-size: 1.6rem;
+    margin: 0 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #31ffcc;
+}
 .Home {
  min-height: 100vh;
  background-color: #24374a;
  display: flex;
  justify-content: space-between;
- align-items:center ;
- position: relative;
+ align-items:center;
  padding : 0 80px;
  overflow: hidden;
 
@@ -36,6 +144,7 @@ section{
     min-height: 100vh;
     padding: 10rem 9% 2rem;
 }
+
 header {
     position: fixed;
     top: 0;
@@ -96,22 +205,23 @@ span{
     color: #31ffcc;
 }
 .home-img img{
-    width: 25vw;
+    width: 32vw;
+    height: 32vw;
     animation: floatimage ease ease-in-out;
-    border-radius: 50%;
+    border-radius: 30%;
     object-fit: cover;
-    float: right;
+    float: right-bottom;
     margin: 20px auto; /* Adds spacing around the image */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
     transition: transform 0.3s ease;
 }
 .home-img img:hover, .about-img img:hover {
     transform: scale(1.1); /* Slightly enlarges the image on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhances shadow on hover */
+     /* Enhances shadow on hover */
 }
 .home-content p{
     font-size: 1.6rem;
-    
+    margin-bottom: 2rem;
 }
 .social-media a{
     display: inline-flex;
@@ -414,18 +524,7 @@ span{
     font-size: 1.4rem;
     line-height: 1.6;
 }
-/* Animation for continuous flipping */
-@keyframes flip {
-    0% {
-        transform: rotateY(0deg);
-    }
-    50% {
-        transform: rotateY(180deg);
-    }
-    100% {
-        transform: rotateY(360deg);
-    }
-}
+
 /* Contact Section */
 .contact {
     padding: 5rem 9%;
@@ -454,7 +553,7 @@ span{
 
 .contact .input-box {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     gap: 1rem;
     margin-bottom: 1.5rem;
 }
@@ -482,9 +581,7 @@ span{
     font-size: 1.4rem;
     color: #333;
     outline: none;
-    resize: none;
     transition: border-color 0.3s ease;
-    margin-bottom: 1.5rem;
 }
 
 .contact textarea:focus {
@@ -586,6 +683,7 @@ footer {
     padding-top: 1rem;
     font-size: 1.2rem;
     color: #ccc;
+    text-align: center;
 }
 
 .footer-bottom .footer-policies {
